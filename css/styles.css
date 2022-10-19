@@ -17,36 +17,31 @@ a {
 
 /* HEADER */
 .header {
-    background-color: rgb(0, 0, 0);
+    background-color:black;
     padding: 15px;
     display: flex;
     justify-content: space-between;
-    align-items: flex-end;
+    align-items:flex-end;
     position: sticky;
     top: 0px
-   
 }
 
 .header__img {
-    width: 50px;
-    height: 50px;
+    width: 90px;
+    height: 90px;
     background-color:black
 }
-
- /* .navbar {
-    width: 100%;
-     display: flex;  
-
-}   */
+/* hoy */
+.navbar{
+    display: flex;
+}
 
 .navbar__item {
     font-family: Arial, Helvetica, sans-serif;
-    /* display: flex; */
-    justify-content: center;
-    display: inline-block;
-    width: 25%;
-    position: relative;
-    font-size: 1rem;
+    display: flex;
+    justify-content:center
+   
+
 }
 
 .navbar__letra {
@@ -59,33 +54,10 @@ a {
 
 }
 
-/*  */
 .navbar__list {
     display: flex;
-    gap: 20px;
-    /* submenu */
-    list-style: none;
-    font-size: 0;
-}
+    gap: 20px;   
 
-/* Submenu */
-.navbar__ul {
-    position: absolute;
-    display: none;
-    width: 100px;
-    padding-top: 15px;
-}
-
-.navbar__li {
-    display: block;
-    border-color: beige;
-    padding: 10px;
-    background-color: rgba(57, 54, 54, 0.729);
-
-}
-
-ul li:hover ul {
-    display: block;
 
 }
 
@@ -99,6 +71,8 @@ ul li:hover ul {
     margin-top: 30px;
     color: beige;
     font-size: 1.75rem;
+
+
 }
 
 .seccion {
@@ -111,7 +85,7 @@ ul li:hover ul {
     border: 2px black solid;
     width: 350px;
     margin: 10px;
-
+   
 }
 
 .tarjeta__img {
@@ -189,7 +163,7 @@ ul li:hover ul {
 /* sedes clases */
 .tarjetagenerica {
     display: flex;
-    flex-direction: column;
+    flex-direction: column; 
     background-color: black;
 }
 
@@ -197,14 +171,14 @@ ul li:hover ul {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bolder;
     margin-left: 10px;
-    margin-right: 10px;
+    margin-right:10px ;
     font-size: 1.5rem;
-    color: black;
+    color:black;
     margin-top: 10px;
-    background-color: beige;
+    background-color:beige;
     border-radius: 10px;
     padding: 2.5px;
-
+   
 }
 
 .tarjetagenerica__descripcion {
@@ -213,7 +187,7 @@ ul li:hover ul {
     margin-left: 10px;
     font-size: 1rem;
     margin-bottom: 10px;
-    background-color: black;
+    background-color:black;
     color: beige;
     margin-top: 5px;
 
@@ -233,21 +207,13 @@ ul li:hover ul {
 
 /* staff */
 .staff {
-    /* display: flex;
+    display: flex;
     flex-direction: row;
-    justify-content: space-between; */
-     display: grid;
-    grid-template-columns: repeat(3,1fr);
-      grid-template-rows: 100vh ;
-    background-color: yellow;
-    /* gap: 20px; */
-     justify-items: center;
-    align-items: center
-    /* justify-content: space-between;  */
+    justify-content: space-between;
 }
 
 .staffprofes {
-    /* width: 25%;
+    width: 25%;
     border-radius: 20px;
     border-color: black;
     background-color: black;
@@ -255,45 +221,27 @@ ul li:hover ul {
     margin: 10px;
     display: flex;
     flex-direction: column;
-    align-items: center; */
-   
-    background-color: rgb(0, 0, 0);
-    width: 80%;
-      height: 80vh;  
-    border-radius: 20px;
-    /* padding: 30px; */
-    display: flex;
-    justify-items: center;
     align-items: center;
 }
 
 .staffprofes__nombre {
-    /* font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 1.5rem;
     color: beige;
     padding: 10px;
-    text-align: center; */
-    color: beige;
-    font-size: 1.5rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-items:flex-start    ;
-    width: 100%;
-    height: 100%;
-
+    text-align: center;
 }
 
-/* .staffprofes__img {
+.staffprofes__img {
     border-radius: 10px;
-} */
+}
 
 .staffprofes__descrip {
-    /* font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 0.80rem;
     text-align: center;
     color: beige;
-    padding: 5px; */
+    padding: 5px;
 
 }
 
@@ -310,8 +258,8 @@ ul li:hover ul {
 .form__caja {
     background-color: black;
     color: beige;
-    padding: 5px;
-    margin-left: 500px;
+     padding: 5px; 
+     margin-left: 500px;
 
 }
 
