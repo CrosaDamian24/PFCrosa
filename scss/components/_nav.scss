@@ -1,0 +1,25 @@
+/* HEADER */
+.header__titulo {
+    position: absolute;
+    z-index: -1;
+}
+
+// NAVBAR
+.navbar-light .navbar-nav {
+    .nav-link.active {
+        color: $color-block;
+        font-weight: bold;
+    }
+
+    .nav-link {
+        color:$color-secundario;
+
+        &:hover {
+            color:$color-secundario;
+        }
+    }
+
+    .nav-link.active:hover {
+        color: rgb(255, 255, 255);
+    }
+}

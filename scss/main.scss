@@ -1,0 +1,31 @@
+@import"./utils/variables";
+// @import"./utils/mixin";
+
+@import"./base/base";
+
+@import"./components/tarjeta";
+@import"./components/nav";
+
+@import"./pages/index.scss";
+@import"./pages/sedes.scss";
+@import"./pages/contacto.scss";
+@import"./pages/staff.scss";
+@import"./pages/clases.scss";
+
+// @media (min-width:1200px) {
+//     .portada__titulo {
+//         font-size: 2rem
+//     }
+
+//     .seccionsegunda__parrafo {
+//         font-size: 1rem;
+//     }
+// }
+
+
+
+
+
+
+
+

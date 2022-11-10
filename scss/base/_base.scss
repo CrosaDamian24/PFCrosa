@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: 'Nunito', sans-serif;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+/* portada */
+.portada__titulo {
+    text-align: center;
+    background-color:$color-principal;
+     padding: 20px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    color: $color-secundario;
+ }
+
+
+/* Animaciones */
+.portada__titulo--animacion {
+    animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
+
+@keyframes text-focus-in {
+    0% {
+        filter: blur(12px);
+        opacity: 0;
+    }
+
+    100% {
+        filter: blur(0px);
+        opacity: 1;
+    }
+}

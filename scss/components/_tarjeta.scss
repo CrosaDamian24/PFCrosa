@@ -1,0 +1,23 @@
+.tarjeta {
+    border: 2px $color-principal solid;
+    background-color: $color-principal;
+
+    &__img {
+        width: 100%;
+        padding: 10px;
+        border-radius: 10px;
+        background-color:$color-secundario;
+        margin-top: 10px;
+
+        &:hover {
+            transform: scale(1.05);
+        }
+    }
+
+    &__titulo {
+        text-align: center;
+        color:$color-secundario;
+        padding: 10px;
+    }
+}
+
