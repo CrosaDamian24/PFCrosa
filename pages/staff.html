@@ -14,19 +14,19 @@
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/styles.css">
-    <link rel="icon" type="image/x-icon" href="/images/Logos/Logo_copia.png">
+    <link rel="icon" type="image/x-icon" href="/images/Logos/Logo.png">
 </head>
 
-<body>
+<body class="fondo">
     <header class="navbar sticky-top navbar-expand-xl navbar-light bg-black p-0 m-0">
         <div class="container-fluid  m-0">
             <nav class="navbar navbar-light ">
                 <div class="container-fluid w-xl-100">
-                    <img src="../images/Logos/Logo_copia.png" alt="Logo Block" width="60">
+                    <img src="../images/Logos/Logo.png" alt="Logo Block" width="60">
                 </div>
             </nav>
 
-            <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse"
+            <button class="navbar-toggler navbar-toggler--modificador" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -60,9 +60,77 @@
     <main>
         <h2 class="fs-5 portada__titulo portada__titulo--animacion"> STAFF</h2>
 
-        <div class="container-fluid bg-black">
+        <div class="container-fluid ">
             <div class="row justify-content-center">
-                <div class="col-xl-4 aling-content-center">
+                <div class="blog-card col-10">
+                    <div class="meta">
+            
+                        <div class="photo" style="background-image: url(../images/staff/profe1.jpg)"></div>
+                   
+                      <ul class="details">
+                        <li class="author">Apodos: Toro/Dani</li>
+                        <li class="date">Edad: 40 años</li>
+                        <li class="date">Profe de Crossfit y Funcional</li>
+                      </ul>
+                    </div>
+                    <div class="description">
+                
+                      <h2>Daniel Carelli</h2>
+                      <p> Es profe de técnicas de gimnasia apasionado por el deporte y
+                        el
+                        movimiento constante. En sus clases verás resultados super rápidos, con entrenamientos
+                        divertidos
+                        ejecutados al ritmo de una música motivadora, con altos niveles de energía.</p>
+                   
+                    </div>
+                  </div>
+                  <div class="blog-card col-10 alt">
+                    <div class="meta">
+            
+                        <div class="photo" style="background-image: url(../images/staff/profe2.jpg)"></div>
+                   
+                      <ul class="details">
+                        <li class="author">Apodos: El flaco/Sebas</li>
+                        <li class="date">Edad: 50 años</li>
+                        <li class="date">Profe de Funcional y Musculación</li>
+                      </ul>
+                    </div>
+                    <div class="description">
+                
+                      <h2>Sebastian Santellan</h2>
+                      <p> Es instructor de técnicas de gimnasia especializado en
+                        entrenamiento de
+                        Alto rendimiento. En sus clases te vas a llenar de energía y vas a encontrar diferentes
+                        sistemas de
+                        entrenamiento para que logres tus objetivos y cuides tu cuerpo , siempre con una
+                        sonrisa.</p>
+                   
+                    </div>
+                  </div>
+                  <div class="blog-card col-10">
+                    <div class="meta">
+            
+                        <div class="photo" style="background-image: url(../images/staff/profe3.jpg)"></div>
+                   
+                      <ul class="details">
+                        <li class="author">Apodo: Marti</li>
+                        <li class="date">Edad: 49 años</li>
+                        <li class="date">Profe de RMP y Yoga</li>
+                      </ul>
+                    </div>
+                    <div class="description">
+                
+                      <h2>Martina Biuani</h2>
+                      <p> Es profe de técnicas de gimnasia desde el año 1999 brindando
+                        clases de
+                        Aero Local, Localizada, GAP y Ritmos. Con ella vas a fortalecer tus músculos con
+                        sesiones
+                        muy
+                        dinámicas y muy power.</p>
+                   
+                    </div>
+                  </div>
+                <!-- <div class="col-xl-4 aling-content-center">
                     <div class="d-flex justify-content-center h-100">
                         <div class="staffprofes card--animada ">
                             <h2 class="staffprofes__nombre ">Dani</h2>
@@ -78,9 +146,9 @@
                                 ejecutados al ritmo de una música motivadora, con altos niveles de energía.</p>
                         </div>
                     </div>
-                </div>
+                </div> -->
 
-                <div class="col-xl-4 aling-content-center">
+                <!-- <div class="col-xl-4 aling-content-center">
                     <div class="d-flex justify-content-center h-100">
                         <div class="staffprofes card--animada  ">
                             <h2 class="staffprofes__nombre ">Seba</h2>
@@ -96,8 +164,8 @@
                                 sonrisa.</p>
                         </div>
                     </div>
-                </div>
-                <div class="col-xl-4 aling-content-center">
+                </div> -->
+                <!-- <div class="col-xl-4 aling-content-center">
                     <div class="d-flex justify-content-center h-100">
                         <div class="staffprofes card--animada ">
                             <h2 class="staffprofes__nombre ">Marti</h2>
@@ -113,58 +181,40 @@
                                 dinámicas y muy power.</p>
                         </div>
                     </div>
-                </div>
+                </div> -->
 
             </div>
         </div>
 
     </main>
-    <footer class="text-center text-lg-start bg-black text-white">
-
-        <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom ">
-
-            <div class="me-5 d-none d-lg-block">
-                <span>Conéctate con nosotros en las redes sociales:</span>
+  
+    <footer class="text-center text-lg-start  footer text-white">
+        <section class="container-fluid">
+            <div class="row d-flex justify-content-center justify-content-lg-between p-2 border-bottom border-top ">
+                <div class="col-xl-6 d-none d-xl-block">
+                    <span>Conéctate con nosotros en las redes sociales:</span>
+                </div>
+                <div class="col-xl-6 d-flex justify-content-center justify-content-xl-end ">
+                    <a href="" class="bi bi-whatsapp text-white me-2 footer__texto"> </a>
+                    <a href="https://es-la.facebook.com/" class="bi bi-facebook text-white  me-2 footer__texto"></a>
+                    <a href="https://www.instagram.com/" class="bi bi-instagram text-white footer__texto"></a>
+                </div>
             </div>
-
-            <div class="justify-content-around">
-                <!-- <a href="" class="me-4 text-reset "> -->
-                <i class="bi bi-whatsapp"></i>
-                <!-- </a> -->
-                <!-- <a href="" class="me-4 text-reset">-->
-                <i class="bi bi-facebook"></i>
-                <!-- </a> -->
-                <!-- <a href="" class="me-4 text-reset"> -->
-                <i class="bi bi-instagram"></i>
-                <!-- </a>  -->
-
-            </div>
-
         </section>
 
-
-        <div class="container text-center text-md-start mt-1">
-            <!-- Grid row -->
-            <div class="row ">
-
-                <div class="d-flex justify-content-center ">
-                    <img clas="w-25" src="../images/Logos/Logo_copia.png" alt="log block">
+        <seccion class="container text-center text-md-start mt-1 p-0">
+            <div class="row p-0 m-0 ">
+                <div class="d-flex justify-content-center mt-0 ">
+                    <img clas="w-25 " src="../images/Logos/Logo.png" alt="logo block">
                 </div>
                 <div class="text-uppercase text-center fw-bold">
-                    <span>Horarios de Atención</span>
+                    <span>BLOCK GYM</span>
                 </div>
                 <div class="text-center">
-                    <span>Lunes a Viernes 7 AM a 21 PM</span>
+                    <span>El cambio comienza con vos!</span>
                 </div>
-                <div class="text-center mb-2 ">
-                    <span>Sábados 10 AM a 13 PM</span>
-                </div>
-
             </div>
-
-        </div>
-
-
+        </seccion>
     </footer>
     <script src="../js/bootstrap.bundle.min.js"></script>
 

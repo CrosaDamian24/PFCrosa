@@ -1,23 +1,29 @@
 .tarjeta {
-    border: 2px $color-principal solid;
-    background-color: $color-principal;
+    // border: 2px $color-principal solid;
+    // background-color: $color-principal;
 
     &__img {
         width: 100%;
         padding: 10px;
-        border-radius: 10px;
-        background-color:$color-secundario;
+        border-radius: 50px;
+        // background-color:$color-secundario;
+        background-color: rgba(255, 255, 255, 0.060);
         margin-top: 10px;
+    
 
         &:hover {
             transform: scale(1.05);
-        }
+            background-color:$color-secundario;
+   
+                    }
     }
 
     &__titulo {
         text-align: center;
+        font-weight: bold;
         color:$color-secundario;
         padding: 10px;
+        
     }
 }
 

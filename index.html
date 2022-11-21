@@ -15,20 +15,22 @@
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link href='https://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="./css/styles.css">
-    <link rel="icon" type="image/x-icon" href="/images/Logos/Logo_copia.png">
+    <link rel="icon" type="image/x-icon" href="/images/Logos/Logo.png">
 </head>
 
-<body>
+<body class="fondo">
+
     <h1 class="header__titulo">Gimnasio Block</h1>
-    <!-- <header class="header"> -->
-    <header class="navbar sticky-top navbar-expand-xl navbar-light bg-black p-0 m-0">
-        <div class="container-fluid m-0  ">
-            <nav class="navbar navbar-light  ">
+
+    <!-- NAV -->
+    <header class="navbar sticky-top navbar-expand-xl navbar-light bg-black p-0 m-0 ">
+        <div class="container-fluid m-0 ">
+            <nav class="navbar navbar-light   ">
                 <div class="container-fluid w-xl-100">
-                    <img src="./images/Logos/Logo_copia.png" alt="Logo Block" width="60">
+                    <img src="./images/Logos/Logo.png" alt="Logo Block" width="60">
                 </div>
             </nav>
-            <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse"
+            <button class="navbar-toggler navbar-toggler--modificador" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -46,37 +48,12 @@
                         <li class="nav-item">
                             <a class="nav-link" aria-current="page" href="./pages/sedes.html">SEDES</a>
                         </li>
-                        <!-- <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                Clases
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="#">Crossfit</a></li>
-                                <li><a class="dropdown-item" href="#">Funcional</a></li>
-                                <li><a class="dropdown-item" href="#">RPM</a></li>
-                            </ul>
-                        </li> -->
-                        <!-- <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                Sedes
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="#">Bulevar</a></li>
-                                <li><a class="dropdown-item" href="#">Parque</a></li>
-                            </ul>
-
-                        </li> -->
                         <li class="nav-item">
                             <a class="nav-link" aria-current="page" href="./pages/staff.html">STAFF</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" aria-current="page" href="./pages/contacto.html">CONTACTO</a>
                         </li>
-                        <!-- <li class="nav-item">
-                        <a class="nav-link disabled">Deshabilitado</a>
-                      </li> -->
                     </ul>
                 </div>
             </div>
@@ -84,137 +61,167 @@
     </header>
 
     <main>
-        <div class="container-fluid" class="bg-black">
-            <div class="row ">
-                <h2 class="fs-5 portada__titulo portada__titulo--animacion "> EL CAMBIO COMIENZA CON VOS!</h2>
 
+        <!-- Portada -->
+        <div class="container-fluid position-relative ">
+            <!-- d-none d-xl-block -->
+            <div class="row justify-content-center portada--img w-100">
+                <!-- <h2 class="fs-1 portada__titulo--modificador portada__titulo--animacion ">BLOCK GYM</h2> -->
+                <h2 class="animated-shadow">Block Gim</h2>
             </div>
-                
         </div>
 
-        <section class="container-fluid bg-black">
+
+
+
+
+        <!-- Primer titulo -->
+        <div class="container-fluid">
             <div class="row justify-content-center">
-                <div class="col-10 aling-content-center col-xl-4 aling-content-center">
+                <h2 class="fs-4 portada__titulo portada__titulo--animacion "> EL CAMBIO COMIENZA CON VOS!</h2>
+            </div>
+
+        </div>
+
+        <!-- Primera parte -->
+        <section class="container-fluid ">
+            <div class="row justify-content-center">
+
+                <article class="col-10 aling-content-center col-xl-4 aling-content-center">
                     <div class="tarjeta">
                         <img class="tarjeta__img" src="./images/clases/musculacion.jpg"
                             alt="entrenamiento con mancuernas">
                         <h2 class="tarjeta__titulo">MUSCULACIÓN</h2>
                     </div>
-                </div>
+                </article>
 
-                <div class="col-10 aling-content-center col-xl-4 aling-content-center">
+                <article class="col-10 aling-content-center col-xl-4 aling-content-center">
                     <div class="tarjeta">
-                        <img class="tarjeta__img" src="./images/clases/crossfit2.jpg" alt="entrenamiento de crossfit">
+                        <img class="tarjeta__img" src="./images/clases/crossfit2.jpg"
+                            alt="entrenamiento con mancuerna un brazo">
                         <h2 class="tarjeta__titulo">CROSSFIT</h2>
                     </div>
-                </div>
+                </article>
 
-                <div class="col-10 aling-content-center col-xl-4 aling-content-center">
+                <article class="col-10 aling-content-center col-xl-4 aling-content-center">
                     <div class="tarjeta">
-                        <img class="tarjeta__img" src="./images/clases/boxeo.jpg" alt="entrenamiento de boxe">
+                        <img class="tarjeta__img" src="./images/clases/boxeo.jpg" alt="entrenamiento de boxeo">
                         <h2 class="tarjeta__titulo">BOX</h2>
                     </div>
-                </div>
-
-            </div>
-
-        </section>
-
-        <div class="container-fluid">
-            <div class="row ">
-                <h2 class="fs-5 portada__titulo"> ¿Por que nos elegirías?</h2>
-            </div>
-        </div>
-
-        <section class="seccionsegunda">
-            <div class="container-fluid bg-black">
-                <div class="row justify-content-center">
-                    <P class="fs-6 seccionsegunda__parrafo">Somos un equipo de trabajo comprometido en acompañar tu
-                        superación
-                        personal de manera profesional y personalizada. Contamos con equipamiento de última generación y
-                        las
-                        disciplinas de entrenamiento más variadas, para que tu mejor elección sea tu mejor performance.
-                    </P>
-
-                </div>
+                </article>
             </div>
         </section>
 
+        <!-- Segunda parte -->
+        <section class="container-fluid ">
+            <article class="row ">
+                <h2 class="fs-4 portada__titulo"> ¿Por que nos elegirías?</h2>
 
-        <div id="carouselExampleInterval" class="carousel slide d-xl-none" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active" data-bs-interval="10000">
-                    <img src="./images/Elementos/rusa.jpg" class="d-block w-100 " alt="pesa rusa">
+                <div class="seccionsegunda">
+                    <div class="container-fluid">
+                        <div class="row justify-content-center">
+                            <div class=" col-xs-12 col-xl-6">
+                                <P class="fs-6 seccionsegunda__parrafo">Somos un equipo de trabajo comprometido en
+                                    acompañar
+                                    tu
+                                    superación
+                                    personal de manera profesional y personalizada. Contamos con equipamiento de última
+                                    generación y
+                                    las
+                                    disciplinas de entrenamiento más variadas, para que tu mejor elección sea tu mejor
+                                    performance.
+                                </P>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="carousel-item" data-bs-interval="10000">
-                    <img src="./images/Elementos/bici.jpg" class="d-block w-100" alt="bici de gim">
-                </div>
-                <div class="carousel-item" data-bs-interval="10000">
-                    <img src="./images/Elementos/macuerna.jpg" class="d-block w-100" alt="Mancuernas en el piso">
+            </article>
+        </section>
+
+        <!-- Tercera parte -->
+        <!-- Imagenes mobile-->
+        <div class="container-fluid   ">
+            <div class="row justify-content-center">
+                <div class="col-11 m-1 ">
+                    <div id="carouselIndex" class="carousel slide d-xl-none" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active" data-bs-interval="10000">
+                                <img src="./images/clases/mujerbanco.jpg" class="d-block w-100 "
+                                    alt="mujer en banco de gim">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="10000">
+                                <img src="./images/clases/mujerrusa.jpg" class="d-block w-100"
+                                    alt="mujer con pesa rusa">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="10000">
+                                <img src="./images/clases/mujermariposa.jpg" class="d-block w-100"
+                                    alt="mujer en banco de apertura">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselIndex"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Anterior</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselIndex"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Siguiente</span>
+                        </button>
+                    </div>
                 </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
-                data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Anterior</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
-                data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Siguiente</span>
-            </button>
+
         </div>
 
-        <div class="container-fluid d-none d-xl-block bg-black">
-            <div class="row m-2">
-                <div class="col-4 " data-aos="zoom-in">
-                    <img class="seccion__img seccion__img--animacion" src="./images/Elementos/rusa.jpg"
+        <!-- Imagenes desktop-->
+        <div class="container-fluid d-none d-xl-block ">
+            <div class="row m-2 ">
+                <div class="col-4  " data-aos="zoom-in">
+                    <img class="seccion__img seccion__img--animacion" src="./images/clases/mujerbanco.jpg"
                         alt="Pesas rusas">
                 </div>
                 <div class="col-4" data-aos="zoom-in">
-                    <img class="seccion__img seccion__img--animacion" src="./images/Elementos/bici.jpg" alt="bici gim">
+                    <img class="seccion__img seccion__img--animacion" src="./images/clases/mujerrusa.jpg"
+                        alt="bici gim">
                 </div>
 
                 <div class="col-4" data-aos="zoom-in">
-                    <img class="seccion__img" src="./images/Elementos/macuerna.jpg" alt="Mancuernas en el piso">
+                    <img class="seccion__img" src="./images/clases/mujermariposa.jpg" alt="Mancuernas en el piso">
 
                 </div>
             </div>
-
         </div>
+
     </main>
 
-    <footer class="text-center text-lg-start bg-black text-white">
-        <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom ">
-            <div class="me-5 d-none d-lg-block">
-                <span>Conéctate con nosotros en las redes sociales:</span>
+    <footer class="text-center text-lg-start  footer text-white">
+        <section class="container-fluid">
+            <div class="row d-flex justify-content-center justify-content-lg-between p-2 border-bottom border-top ">
+                <div class="col-xl-6 d-none d-xl-block">
+                    <span>Conéctate con nosotros en las redes sociales:</span>
+                </div>
+                <div class="col-xl-6 d-flex justify-content-center justify-content-xl-end ">
+                    <a href="" class="bi bi-whatsapp text-white me-2 footer__texto"> </a>
+                    <a href="https://es-la.facebook.com/" class="bi bi-facebook text-white  me-2 footer__texto"></a>
+                    <a href="https://www.instagram.com/" class="bi bi-instagram text-white footer__texto"></a>
+                </div>
             </div>
-            <div class=" justify-content-around g-5">
-                <i class="bi bi-whatsapp"></i>
-                <i class="bi bi-facebook"></i>
-                <i class="bi bi-instagram"></i>
-            </div>
+
         </section>
-
-
-        <div class="container text-center text-md-start mt-1">
-            <div class="row ">
-                <div class="d-flex justify-content-center ">
-                    <img clas="w-25" src="./images/Logos/Logo_copia.png" alt="logo block">
+            <seccion class="container text-center text-md-start mt-1 p-0">
+            <div class="row p-0 m-0">
+                <div class="d-flex justify-content-center mt-0 ">
+                    <img clas="w-25 " src="./images/Logos/Logo.png" alt="logo block">
                 </div>
                 <div class="text-uppercase text-center fw-bold">
-                    <span>Horarios de Atención</span>
+                    <span>BLOCK GYM</span>
                 </div>
-                <div class="text-center">
-                    <span>Lunes a Viernes 7 AM a 21 PM</span>
-                </div>
-                <div class="text-center mb-2 ">
-                    <span>Sábados 10 AM a 13 PM</span>
+                <div class="text-center ">
+                    <span>El cambio comienza con vos!</span>
                 </div>
             </div>
-
-        </div>
-
+        </seccion>
     </footer>
 
     <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"

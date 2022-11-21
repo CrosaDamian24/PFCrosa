@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-size: 16px;
+    // font-size: 16px;
     font-family: 'Nunito', sans-serif;
 }
 
@@ -14,15 +14,33 @@ ol {
 a {
     text-decoration: none;
 }
+.fondo {
+    background-image: url(/images/fondo/fondo_principal.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+
+
+}
 /* portada */
 .portada__titulo {
     text-align: center;
-    background-color:$color-principal;
-     padding: 20px;
-    margin-bottom: 30px;
-    margin-top: 30px;
+    font-weight: bolder;
+    //  margin-top: 30px;
     color: $color-secundario;
- }
+    background-color:rgba(255, 255, 255, 0.060);
+    margin-bottom: 30px;
+    padding: 5px // text-shadow: 2px 2px #a6d3a7;
+
+}
+.portada__titulo--modificador{
+    text-align: center;
+font-weight: bolder;
+//  margin-top: 30px;
+color: $color-secundario;
+// background-color:rgba(255, 255, 255, 0.060);
+margin-bottom: 30px;
+padding: 5px // text-shadow: 2px 2px #a6d3a7;
+}
 
 
 /* Animaciones */
@@ -41,3 +59,22 @@ a {
         opacity: 1;
     }
 }
+
+.portada--img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    background-image: radial-gradient(rgb(255, 255, 255) 45%, transparent 70%)
+}
+
+.portada--img::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-image: radial-gradient(transparent 60%, rgba(255, 255, 255, 0.166) 70%), url(/images/fondo/fondoprincipal.jpg);
+    background-size: cover;
+    mix-blend-mode: multiply;
+}
+
+

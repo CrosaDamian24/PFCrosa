@@ -1,44 +1,37 @@
-/* sedes/clases */
-.tarjetagenerica {
-    display: flex;
-    flex-direction: column;
-    background-color: $color-principal;
-
-    &__titulo {
-        font-weight: bolder;
-        margin-left: 10px;
-        margin-right: 10px;
-         color: $color-principal;
-        margin-top: 10px;
-        background-color: $color-secundario;
-        border-radius: 10px;
-        padding: 2.5px;
-
-        &:hover {
-            transform: scale(1.03);
-            background-color: $color-principal;
-            color:$color-secundario;
+.cardsedes {
+    font-size: 1em;
+    overflow: hidden;
+    padding: 5;
+    border: none;
+    border-radius: .28571429rem;
+    box-shadow: 0 1px 3px 0 #d4d4d5, 0 0 0 1px #d4d4d5;
+    margin-top:20px;
+    margin-bottom: 10px;
+    background-color: $tarjeta;
+    &__title{
+        color: white;
+        font-weight: bold;
+    }
+    &__texto{
+        color: white;
+        font-weight: lighter;
+        &--modificado{
+            color: white;
+            font-style: italic;
         }
-    }
-
-    &__descripcion {
-        font-style: italic;
-        margin-left: 10px;
-        font-size: 1rem;
-        margin-bottom: 5px;
-        background-color: $color-principal;
-        color:$color-secundario;
-        margin-top: 5px;
-    }
-
-    &__mapa {
-        margin-left: 10px;
-        margin-bottom: 10px;
-    }
-
-    &__img {
-        margin-left: 10px;
-        padding: 10px;
-        margin-bottom: 10px;
+        
     }
 }
+
+.card-block {
+    font-size: 1em;
+    position: relative;
+    margin: 0;
+    padding: 1em;
+    border: none;
+    border-top: 1px solid rgba(34, 36, 38, .1);
+    box-shadow: none;
+     
+}
+
+

@@ -1,0 +1,14 @@
+.btn {
+  margin-top: auto;
+  background-color: $color-block;
+  font-weight: bold;
+  color: $color-principal;  
+  border-color: $color-principal;
+  &:hover{
+    background-color: rgb(12, 13, 13);
+    // border-radius: 50px
+    color: $color-block;
+    border-color: $color-block;
+    
+  }
+}

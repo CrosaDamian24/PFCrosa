@@ -5,13 +5,15 @@
 
 @import"./components/tarjeta";
 @import"./components/nav";
+@import"./components/footer";
+@import"./components/boton"; 
 
 @import"./pages/index.scss";
 @import"./pages/sedes.scss";
 @import"./pages/contacto.scss";
 @import"./pages/staff.scss";
 @import"./pages/clases.scss";
-
+// @import"./pages/planes.scss";
 // @media (min-width:1200px) {
 //     .portada__titulo {
 //         font-size: 2rem
