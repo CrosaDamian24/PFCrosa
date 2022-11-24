@@ -5,21 +5,25 @@
     border: none;
     border-radius: .28571429rem;
     box-shadow: 0 1px 3px 0 #d4d4d5, 0 0 0 1px #d4d4d5;
-    margin-top:20px;
+    margin-top: 20px;
     margin-bottom: 10px;
     background-color: $tarjeta;
-    &__title{
+
+    &__title {
         color: white;
         font-weight: bold;
     }
-    &__texto{
+
+    &__texto {
         color: white;
         font-weight: lighter;
-        &--modificado{
+
+        &--modificado {
             color: white;
             font-style: italic;
+            font-weight: bolder;
         }
-        
+
     }
 }
 
@@ -31,7 +35,29 @@
     border: none;
     border-top: 1px solid rgba(34, 36, 38, .1);
     box-shadow: none;
-     
+
+}
+
+
+.servicios {
+    margin-top: 0;
+    color: $color-secundario;
+    font-size: 1em;
+
+    &__texto {
+        font-weight: bold;
+        margin-right: 10px;
+    }
+
+    &__img {
+        width: 20px;
+        height: 20px;
+        // opacity: 0.4;
+    }
+    &--modificador{
+        width: 60px;
+        height: 60px;
+    }
 }
 
 

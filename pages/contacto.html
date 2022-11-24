@@ -17,6 +17,9 @@
 </head>
 
 <body class="fondo">
+    
+    <h1 class="header__titulo">Gimnasio Block</h1>
+
     <header class="navbar sticky-top navbar-expand-xl navbar-light bg-black p-0 m-0">
         <div class="container-fluid m-0 ">
             <nav class="navbar navbar-light ">
@@ -60,61 +63,56 @@
         <h2 class="fs-5 portada__titulo portada__titulo--animacion"> DEJANOS TU CONSULTA</h2>
         <div class="container-fluid">
             <form class="row g-3 needs-validation form ">
+                <!-- NOMBRE -->
                 <div class="col-md-4 ">
                     <label for="nombre" class="form-label">Nombre</label>
-                    <input type="text" name="nombre" class="form-control" id="nombre" placeholder="Nombre" required>
+                    <input type="text" name="nombre" class="form-control form-control--modificado" id="nombre"
+                        placeholder="Nombre" required>
 
-                    <div class="valid-feedback">
-                    
-                    </div>
                 </div>
+                <!-- APELLIDO -->
                 <div class="col-md-4">
                     <label for="apellido" class="form-label">Apellido</label>
-                    <input type="text" name="apellido" class="form-control" id="apellido" placeholder="Apellido"
-                        required>
-                    <div class="valid-feedback">
-                        ¡Se ve bien!
-                    </div>
+                    <input type="text" name="apellido" class="form-control form-control--modificado" id="apellido"
+                        placeholder="Apellido" required>
+
                 </div>
+                <!-- CORREO ELECTRONICO -->
                 <div class="col-md-4 ">
                     <label for="email" class="form-label">Correo electrónico</label>
-                    <input type="email" class="form-control " name="email" id="email"
+                    <input type="email" class="form-control form-control--modificado" name="email" id="email"
                         placeholder="nombre@ejemplo.com" required>
                 </div>
-
+                <!-- ASUNTO -->
                 <div class="col-md-4 ">
                     <label for="asunto" class="form-label">Asunto</label>
-                    <select class="form-select" name="asunto" id="asunto" required>
+                    <select class="form-select form-control--modificado" name="asunto" id="asunto" required>
                         <option selected disabled value="">Elige...</option>
                         <option>Horarios</option>
                         <option>Clases</option>
                     </select>
-                    <div class="invalid-feedback">
-                        Selecciona un estado válido.
-                    </div>
                 </div>
+                <!-- MENSAJE -->
                 <div class="col-md-3">
                     <label class="form-lacabel" for="mensaje">Mensaje</label>
-                    <div>
-
-                        <textarea class="form-control" placeholder="Ingrese su mensaje" nombre="mensaje" id="mensaje"
-                            required></textarea>
-
-                    </div>
+                    <textarea class="form-control form-control--modificado " placeholder="Ingrese su mensaje"
+                        nombre="mensaje" id="mensaje" required></textarea>
                 </div>
+                <!-- NOTIFICACIONES -->
                 <div class="col-12 ">
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" nombre="notificacion"
+                    <div class="form-check ">
+                        <input class="form-check-input  " type="checkbox" value="" nombre="notificacion"
                             id="notificacion">
                         <label class="form-check-label" for="notificacion">
                             Desea recibir notificaciones?
                         </label>
                     </div>
                 </div>
+                <!-- CORREO ELECTRONICO -->
                 <div class="col-12 d-flex justify-content-lg-center ">
                     <button class="btn " type="submit">Enviar</button>
-
                 </div>
+
             </form>
 
         </div>

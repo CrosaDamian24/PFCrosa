@@ -12,18 +12,18 @@
     }
 
     .nav-link {
-        color:$color-secundario;
+        color: $color-secundario;
 
         &:hover {
-            color:$color-secundario;
+            color: $color-secundario;
         }
     }
 
     .nav-link.active:hover {
-        color: rgb(255, 255, 255);
+        color: $color-secundario;
     }
 }
 
-.navbar-toggler--modificador{
- background-color: $color-block;
+.navbar-toggler--modificador {
+    background-color: $color-block;
 }

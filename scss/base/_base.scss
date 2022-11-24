@@ -42,12 +42,109 @@ margin-bottom: 30px;
 padding: 5px // text-shadow: 2px 2px #a6d3a7;
 }
 
+.contenedor{
+    height: 100vh;
+    
+}
+.portadaprincipal{
+    // background-image: url('../images/FondosIndex/fondoprincipal.jpg');
+    filter: opacity(0.4);
+    width: 100%;
+    // filter:blur(.9)
+    // height: 50%;
+
+
+
+}
+    .textoprincipal{
+        position: absolute;
+        z-index: -1;
+    }
+
 
 /* Animaciones */
+
+// ANIMACION INDEX BLOCK GIM
+.animacionblock {
+  color: #ffffff;
+//    font: normal 140px Varela Round, sans-serif;
+  height: 140px;
+  left: 0;
+  letter-spacing: 5px;
+  text-align: center;
+  text-transform: uppercase;
+  width: 100%;
+  animation: move linear 2000ms infinite;
+  z-index: 2
+}
+/*Animación para rotar las sombras*/
+@keyframes move {
+  0% {
+    text-shadow:
+      4px -4px 0 #da0641,
+      3px -3px 0 #da0641,
+      2px -2px 0 #da0641,
+      1px -1px 0 #da0641,
+      -4px 4px 0 #13f1fc,
+      -3px 3px 0 #13f1fc,
+      -2px 2px 0 #13f1fc,
+      -1px 1px 0 #13f1fc
+    ;
+  }
+  25% {
+    text-shadow:
+      -4px -4px 0 #13f1fc,
+      -3px -3px 0 #13f1fc,
+      -2px -2px 0 #13f1fc,
+      -1px -1px 0 #13f1fc,
+      4px 4px 0 #da0641,
+      3px 3px 0 #da0641,
+      2px 2px 0 #da0641,
+      1px 1px 0 #da0641
+    ;
+  }
+  50% {
+    text-shadow:
+      -4px 4px 0 #da0641,
+      -3px 3px 0 #da0641,
+      -2px 2px 0 #da0641,
+      -1px 1px 0 #da0641,
+      4px -4px 0 #13f1fc,
+      3px -3px 0 #13f1fc,
+      2px -2px 0 #13f1fc,
+      1px -1px 0 #13f1fc
+    ;
+  }
+  75% {
+    text-shadow:
+      4px 4px 0 #13f1fc,
+      3px 3px 0 #13f1fc,
+      2px 2px 0 #13f1fc,
+      1px 1px 0 #13f1fc,
+      -4px -4px 0 #da0641,
+      -3px -3px 0 #da0641,
+      -2px -2px 0 #da0641,
+      -1px -1px 0 #da0641
+    ;
+  }
+  100% {
+    text-shadow:
+      4px -4px 0 #da0641,
+      3px -3px 0 #da0641,
+      2px -2px 0 #da0641,
+      1px -1px 0 #da0641,
+      -4px 4px 0 #13f1fc,
+      -3px 3px 0 #13f1fc,
+      -2px 2px 0 #13f1fc,
+      -1px 1px 0 #13f1fc
+    ;
+  }
+}
+
+// ANIMACION TITULO CLASES,SEDES,STAFF,CONTACTO
 .portada__titulo--animacion {
     animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
 }
-
 @keyframes text-focus-in {
     0% {
         filter: blur(12px);
@@ -60,21 +157,88 @@ padding: 5px // text-shadow: 2px 2px #a6d3a7;
     }
 }
 
-.portada--img {
-    width: 100%;
-    height: 100vh;
-    object-fit: cover;
-    background-image: radial-gradient(rgb(255, 255, 255) 45%, transparent 70%)
+// .portada--img {
+//     width: 100%;
+//     height: 100vh;
+//     object-fit: cover;
+//     background-image: radial-gradient(rgb(255, 255, 255) 45%, transparent 70%);
+
+// }
+
+// .portada--img::before {
+//     content: "";
+//     position: absolute;
+//     width: 100%;
+//     height: 100vh;
+//     background-image: radial-gradient(transparent 60%, rgba(255, 255, 255, 0.166) 70%), url("../images/FondosIndex/fondoprincipal.jpg");
+//     background-size: cover;
+//     mix-blend-mode: multiply;
+// }
+
+// .prueba{
+//     width: 100%;
+//     height: 100vh;
+//     // background: radial-gradient(closest-side, #3f87a6, #ebf8e1,url("../images/FondosIndex/fondoprincipal.jpg"));
+//     background-image: radial-gradient(transparent 60%, rgba(255, 255, 255, 0.166) 70%), url("../images/FondosIndex/fondoprincipal.jpg")
+// }
+
+
+
+// sedes animacion de la ubicacion
+.animacion {
+	-webkit-animation: vibrate-1 0.3s linear infinite both;
+	        animation: vibrate-1 0.3s linear infinite both;
 }
-
-.portada--img::before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100vh;
-    background-image: radial-gradient(transparent 60%, rgba(255, 255, 255, 0.166) 70%), url("../images/FondosIndex/fondoprincipal.jpg");
-    background-size: cover;
-    mix-blend-mode: multiply;
-}
-
-
+ @-webkit-keyframes vibrate-1 {
+    0% {
+      -webkit-transform: translate(0);
+              transform: translate(0);
+    }
+    20% {
+      -webkit-transform: translate(-2px, 2px);
+              transform: translate(-2px, 2px);
+    }
+    40% {
+      -webkit-transform: translate(-2px, -2px);
+              transform: translate(-2px, -2px);
+    }
+    60% {
+      -webkit-transform: translate(2px, 2px);
+              transform: translate(2px, 2px);
+    }
+    80% {
+      -webkit-transform: translate(2px, -2px);
+              transform: translate(2px, -2px);
+    }
+    100% {
+      -webkit-transform: translate(0);
+              transform: translate(0);
+    }
+  }
+  @keyframes vibrate-1 {
+    0% {
+      -webkit-transform: translate(0);
+              transform: translate(0);
+    }
+    20% {
+      -webkit-transform: translate(-2px, 2px);
+              transform: translate(-2px, 2px);
+    }
+    40% {
+      -webkit-transform: translate(-2px, -2px);
+              transform: translate(-2px, -2px);
+    }
+    60% {
+      -webkit-transform: translate(2px, 2px);
+              transform: translate(2px, 2px);
+    }
+    80% {
+      -webkit-transform: translate(2px, -2px);
+              transform: translate(2px, -2px);
+    }
+    100% {
+      -webkit-transform: translate(0);
+              transform: translate(0);
+    }
+  }
+  
