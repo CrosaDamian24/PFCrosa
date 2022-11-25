@@ -10,19 +10,29 @@
     background-color: $tarjeta;
 
     &__title {
-        color: white;
+        color:$color-secundario;
         font-weight: bold;
     }
 
     &__texto {
-        color: white;
+        color: $color-secundario;
         font-weight: lighter;
 
         &--modificado {
-            color: white;
+            color:$color-secundario;
             font-style: italic;
             font-weight: bolder;
         }
+      &--ubicacion{
+        font-weight: bold;
+        color: $color-secundario;
+        &:hover{
+             color: rgb(255, 0, 0);
+            font-size: 1.10em;
+            font-weight: bolder;
+    
+        }
+      }
 
     }
 }

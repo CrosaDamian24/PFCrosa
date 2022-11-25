@@ -31,14 +31,6 @@ a {
   padding: 5px;
 }
 
-.portada__titulo--modificador {
-  text-align: center;
-  font-weight: bolder;
-  color: rgb(255, 255, 255);
-  margin-bottom: 30px;
-  padding: 5px;
-}
-
 .contenedor {
   height: 100vh;
 }
@@ -212,7 +204,7 @@ a {
   border-color: rgb(0, 0, 0);
 }
 .btn:hover {
-  background-color: rgb(12, 13, 13);
+  background-color: rgb(0, 0, 0);
   color: #ff2281;
   border-color: #ff2281;
 }
@@ -244,16 +236,25 @@ a {
   background-color: rgba(254, 255, 253, 0.147);
 }
 .cardsedes__title {
-  color: white;
+  color: rgb(255, 255, 255);
   font-weight: bold;
 }
 .cardsedes__texto {
-  color: white;
+  color: rgb(255, 255, 255);
   font-weight: lighter;
 }
 .cardsedes__texto--modificado {
-  color: white;
+  color: rgb(255, 255, 255);
   font-style: italic;
+  font-weight: bolder;
+}
+.cardsedes__texto--ubicacion {
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+}
+.cardsedes__texto--ubicacion:hover {
+  color: rgb(255, 0, 0);
+  font-size: 1.1em;
   font-weight: bolder;
 }
 
@@ -477,50 +478,9 @@ a {
   filter: opacity(0.5);
 }
 
-#scroll-container {
-  overflow: hidden;
-}
-
-#scroll-text {
-  text-align: right;
-  /* animation properties */
-  -moz-transform: translateX(-100%);
-  -webkit-transform: translateX(-100%);
-  transform: translateX(-100%);
-  -moz-animation: my-animation 20s linear infinite;
-  -webkit-animation: my-animation 20s linear infinite;
-  animation: my-animation 20s linear infinite;
-}
-
-/* for Firefox */
-@-moz-keyframes my-animation {
-  from {
-    -moz-transform: translateX(-100%);
-  }
-  to {
-    -moz-transform: translateX(100%);
-  }
-}
-/* for Chrome */
-@-webkit-keyframes my-animation {
-  from {
-    -webkit-transform: translateX(-100%);
-  }
-  to {
-    -webkit-transform: translateX(100%);
-  }
-}
-@keyframes my-animation {
-  from {
-    -moz-transform: translateX(-100%);
-    -webkit-transform: translateX(-100%);
-    transform: translateX(-100%);
-  }
-  to {
-    -moz-transform: translateX(100%);
-    -webkit-transform: translateX(100%);
-    transform: translateX(100%);
-  }
+.card-title--modificada {
+  font-weight: bold;
+  font-style: italic;
 }
 
 /*# sourceMappingURL=styles.css.map */
