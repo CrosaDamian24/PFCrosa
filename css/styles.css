@@ -47,7 +47,7 @@ a {
 
 /* Animaciones */
 .animacionblock {
-  color: #ffffff;
+  color: rgb(255, 255, 255);
   height: 140px;
   left: 0;
   letter-spacing: 5px;
